@@ -3,8 +3,19 @@
 This challenge is to route traffic according to buyer rules. You will set up an http server (*do not use* `express`, see [example-server](https://github.com/Interlincx/example-server) if you need an example) that can create and retrieve "buyers". The http server will also route traffic according to the preferences of the buyers.
 
 ### Setup
--  run ```npm i``` in order to install required packages.
+    
+To install required packages:
 
+-  run ```npm i```  in main folder.
+-  run ```npm i```  in scale-admin folder .
+-  run ```npm i```  in scale-auth folder.
+
+### Run project
+
+To run project:
+
+- run ```npm start``` in *main* folder. (need node -v4.7.2)
+- run ```npm start``` in *scale-admin* folder. (need node -v10.0.0)
 
 ### Tests
 Challenge is evaluated based on tests. Be sure to understand how [`servertest`](https://github.com/rvagg/servertest) works.

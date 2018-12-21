@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="index.js"></script>
+</head>
+<style>
+    .content {
+        display: flex;
+        margin: 60px 30px;
+    }
+    label {
+        font-weight: bold;
+    }
+    .compare input{
+        margin-bottom: 1rem;
+    }
+    .error {
+        border-color: red;
+    }
+</style>
+<body onload="init()">
+<div class="content">
+    <div class="col-6">
+        <form>
+            <div class="form-group">
+                <label for="buyerInfo">ADD Buyer</label>
+                <span class="add-status badge"></span>
+                <textarea  class="form-control" id="buyerInfo" placeholder="Enter buyer info" rows="10"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addBuyer()">GO</button>
+        </form>
+        <form>
+            <div class="form-group">
+                <label for="buyerID">Get Buyer by id</label>
+                <span class="buyerID-status badge"></span>
+                <input class="form-control" id="buyerID" placeholder="Enter buyer id">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="getBuyer()">GO</button>
+        </form>
+        <form class="compare">
+            <div class="form-group">
+                <label>Get location by device and state</label>
+                <span class="location-status badge"></span>
+                <input class="form-control" id="timestamp" placeholder="Enter timestamp">
+                <input class="form-control" id="device" placeholder="Enter device">
+                <input class="form-control" id="state" placeholder="Enter state">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="getLocation()">GO</button>
+        </form>
+    </div>
+    <div class="col-6">
+        <label id="json-label">Results</label>
+        <pre id="json"></pre>
+    </div>
+</div>
+</body>
+</html>

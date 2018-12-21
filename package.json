@@ -12,6 +12,7 @@
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
   "devDependencies": {
+    "authentic-service": "^0.3.1",
     "dg-servertest": "^1.2.2",
     "fakeredis": "^2.0.0",
     "map-limit": "0.0.1",
